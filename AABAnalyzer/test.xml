@@ -1,0 +1,453 @@
+<manifest versionCode="88" versionName="1.0.0" installLocation="2" compileSdkVersion="34" compileSdkVersionCodename="14"
+          package="com.asmr.coloring.paint.book" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-sdk minSdkVersion="26" targetSdkVersion="34"></uses-sdk>
+    <supports-screens anyDensity="-1" smallScreens="-1" normalScreens="-1" largeScreens="-1"
+                      xlargeScreens="-1"></supports-screens>
+    <uses-permission name="android.permission.INTERNET"></uses-permission>
+    <uses-permission name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"></uses-permission>
+    <uses-permission name="com.google.android.gms.permission.AD_ID"></uses-permission>
+    <uses-permission name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-feature glEsVersion="196608"></uses-feature>
+    <uses-feature name="android.hardware.vulkan.version" required="0"></uses-feature>
+    <uses-feature name="android.hardware.touchscreen" required="0"></uses-feature>
+    <uses-feature name="android.hardware.touchscreen.multitouch" required="0"></uses-feature>
+    <uses-feature name="android.hardware.touchscreen.multitouch.distinct" required="0"></uses-feature>
+    <uses-permission name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <queries>
+        <intent>
+            <action name="androidx.browser.customtabs.CustomTabsService"></action>
+        </intent>
+        <intent>
+            <action name="android.intent.action.VIEW"></action>
+            <category name="android.intent.category.BROWSABLE"></category>
+            <data scheme="https"></data>
+        </intent>
+        <intent>
+            <action name="android.intent.action.VIEW"></action>
+            <category name="android.intent.category.BROWSABLE"></category>
+            <data scheme="http"></data>
+        </intent>
+        <intent>
+            <action name="android.intent.action.VIEW"></action>
+            <data scheme="market"></data>
+        </intent>
+        <package name="com.android.chrome"></package>
+        <package name="com.android.vending"></package>
+        <package name="com.amazon.venezia"></package>
+        <package name="com.sec.android.app.samsungapps"></package>
+        <package name="com.huawei.appmarket"></package>
+        <intent>
+            <action name="com.applovin.am.intent.action.APPHUB_SERVICE"></action>
+        </intent>
+        <intent>
+            <action name="android.support.customtabs.action.CustomTabsService"></action>
+        </intent>
+        <package name="com.facebook.katana"></package>
+        <intent>
+            <action name="com.digitalturbine.ignite.cl.IgniteRemoteService"></action>
+        </intent>
+    </queries>
+    <uses-permission name="com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE"></uses-permission>
+    <uses-permission name="android.permission.WAKE_LOCK"></uses-permission>
+    <uses-feature name="android.hardware.sensor.light" required="0"></uses-feature>
+    <uses-feature name="android.hardware.sensor.compass" required="0"></uses-feature>
+    <uses-feature name="android.hardware.sensor.gyroscope" required="0"></uses-feature>
+    <uses-feature name="android.hardware.sensor.barometer" required="0"></uses-feature>
+    <uses-feature name="android.hardware.sensor.proximity" required="0"></uses-feature>
+    <uses-permission name="android.permission.POST_NOTIFICATIONS"></uses-permission>
+    <uses-permission name="com.google.android.c2dm.permission.RECEIVE"></uses-permission>
+    <uses-permission name="android.permission.FOREGROUND_SERVICE"></uses-permission>
+    <permission name="com.asmr.coloring.paint.book.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+                protectionLevel="2"></permission>
+    <uses-permission name="com.asmr.coloring.paint.book.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"></uses-permission>
+    <permission name="com.asmr.coloring.paint.book.permission.C2D_MESSAGE" protectionLevel="2"></permission>
+    <uses-permission name="com.asmr.coloring.paint.book.permission.C2D_MESSAGE"></uses-permission>
+    <uses-permission name="android.permission.VIBRATE"></uses-permission>
+    <uses-permission name="android.permission.SCHEDULE_EXACT_ALARM"></uses-permission>
+    <application label="2131820727" icon="2131623936" hardwareAccelerated="-1" extractNativeLibs="-1"
+                 roundIcon="2131623937" appComponentFactory="androidx.core.app.CoreComponentFactory"
+                 isSplitRequired="-1">
+        <service name="com.google.firebase.messaging.MessageForwardingService"
+                 permission="android.permission.BIND_JOB_SERVICE" exported="0"></service>
+        <receiver name="com.adjust.sdk.AdjustReferrerReceiver" permission="android.permission.INSTALL_PACKAGES"
+                  exported="-1">
+            <intent-filter>
+                <action name="com.android.vending.INSTALL_REFERRER"></action>
+            </intent-filter>
+        </receiver>
+        <meta-data name="unity.splash-mode" value="0"></meta-data>
+        <meta-data name="unity.splash-enable" value="-1"></meta-data>
+        <meta-data name="unity.launch-fullscreen" value="-1"></meta-data>
+        <meta-data name="unity.allow-resizable-window" value="0"></meta-data>
+        <meta-data name="notch.config" value="portrait|landscape"></meta-data>
+        <meta-data name="unity.auto-report-fully-drawn" value="-1"></meta-data>
+        <activity name="com.google.firebase.MessagingUnityPlayerActivity" exported="-1" launchMode="2"
+                  screenOrientation="12" configChanges="1073758207" hardwareAccelerated="0" resizeableActivity="0">
+            <intent-filter>
+                <category name="android.intent.category.LAUNCHER"></category>
+                <action name="android.intent.action.MAIN"></action>
+            </intent-filter>
+            <meta-data name="unityplayer.UnityActivity" value="-1"></meta-data>
+            <meta-data name="notch_support" value="-1"></meta-data>
+        </activity>
+        <provider name="com.ironsource.adapters.custom.yandex.IronsourceIntegrityCheckProvider" exported="0"
+                  authorities="com.asmr.coloring.paint.book.IronsourceIntegrityCheckProvider"></provider>
+        <activity theme="2131886322" name="com.yandex.mobile.ads.common.AdActivity" configChanges="4016"></activity>
+        <provider name="com.yandex.mobile.ads.core.initializer.MobileAdsInitializeProvider" exported="0"
+                  authorities="com.asmr.coloring.paint.book.MobileAdsInitializeProvider"></provider>
+        <activity theme="16973830" name="com.inmobi.ads.rendering.InMobiAdActivity" configChanges="1073745844"
+                  hardwareAccelerated="-1"></activity>
+        <activity name="com.my.target.common.MyTargetActivity" configChanges="4016"></activity>
+        <provider name="com.my.target.common.MyTargetContentProvider" enabled="-1" exported="0"
+                  authorities="com.asmr.coloring.paint.book.mytargetcontentprovider"></provider>
+        <activity name="com.adcolony.sdk.AdColonyInterstitialActivity" configChanges="1184"
+                  hardwareAccelerated="-1"></activity>
+        <activity name="com.adcolony.sdk.AdColonyAdViewActivity" configChanges="1184"
+                  hardwareAccelerated="-1"></activity>
+        <activity theme="16973831" name="com.anythink.core.activity.AnyThinkGdprAuthActivity" exported="0"
+                  launchMode="2" configChanges="1184"></activity>
+        <activity theme="16973831" name="com.anythink.basead.ui.ATLandscapeActivity" exported="0" launchMode="0"
+                  screenOrientation="6" configChanges="1200"></activity>
+        <activity theme="16973831" name="com.anythink.basead.ui.ATPortraitActivity" exported="0" launchMode="0"
+                  screenOrientation="7" configChanges="1200"></activity>
+        <activity theme="2131886546" name="com.anythink.basead.ui.ATLandscapeTranslucentActivity" exported="0"
+                  launchMode="0" screenOrientation="6" configChanges="1200"></activity>
+        <activity theme="2131886546" name="com.anythink.basead.ui.ATPortraitTranslucentActivity" exported="0"
+                  launchMode="0" screenOrientation="7" configChanges="1200"></activity>
+        <activity theme="16973837" name="com.anythink.core.basead.ui.web.WebLandPageActivity" exported="0"
+                  launchMode="1" configChanges="1200" windowSoftInputMode="16"></activity>
+        <activity theme="16973841" name="com.anythink.basead.ui.RewardExitConfirmDialogActivity"
+                  exported="0"></activity>
+        <activity theme="16973841" name="com.anythink.expressad.reward.player.ATRewardVideoActivity" exported="0"
+                  excludeFromRecents="-1" launchMode="0" configChanges="1184"></activity>
+        <provider name="com.applovin.sdk.AppLovinInitProvider" exported="0"
+                  authorities="com.asmr.coloring.paint.book.applovininitprovider" initOrder="101"></provider>
+        <activity name="com.applovin.adview.AppLovinFullscreenActivity" exported="0" launchMode="1"
+                  screenOrientation="3" configChanges="1073745844" hardwareAccelerated="-1"></activity>
+        <activity theme="16973831" name="com.applovin.adview.AppLovinFullscreenThemedActivity" exported="0"
+                  launchMode="1" screenOrientation="3" configChanges="1073745844" hardwareAccelerated="-1"></activity>
+        <activity name="com.applovin.sdk.AppLovinWebViewActivity" configChanges="1073745844"></activity>
+        <activity theme="16973831" name="com.applovin.mediation.hybridAds.MaxHybridMRecAdActivity"
+                  configChanges="1073745844"></activity>
+        <activity theme="16973831" name="com.applovin.mediation.hybridAds.MaxHybridNativeAdActivity"
+                  configChanges="1073745844"></activity>
+        <activity theme="2131886565" name="com.applovin.mediation.MaxDebuggerActivity"
+                  configChanges="1073745844"></activity>
+        <activity theme="2131886565" name="com.applovin.mediation.MaxDebuggerDetailActivity"
+                  configChanges="1073745844"></activity>
+        <activity theme="2131886565" name="com.applovin.mediation.MaxDebuggerMultiAdActivity"
+                  configChanges="1073745844"></activity>
+        <activity theme="2131886565" name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity"
+                  configChanges="1073745844"></activity>
+        <activity theme="2131886565" name="com.applovin.mediation.MaxDebuggerAdUnitWaterfallsListActivity"
+                  configChanges="1073745844"></activity>
+        <activity theme="2131886565" name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity"
+                  configChanges="1073745844"></activity>
+        <activity theme="2131886565" name="com.applovin.mediation.MaxDebuggerTcfInfoListActivity"
+                  configChanges="1073745844"></activity>
+        <activity theme="2131886565" name="com.applovin.mediation.MaxDebuggerTcfStringActivity"
+                  configChanges="1073745844"></activity>
+        <activity theme="2131886565" name="com.applovin.mediation.MaxDebuggerTcfVendorDetailListActivity"
+                  configChanges="1073745844"></activity>
+        <activity theme="2131886565" name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity"
+                  configChanges="1073745844"></activity>
+        <activity theme="2131886565" name="com.applovin.mediation.MaxDebuggerTestModeNetworkActivity"
+                  configChanges="1073745844"></activity>
+        <activity theme="2131886565" name="com.applovin.mediation.MaxDebuggerWaterfallKeywordsActivity"
+                  configChanges="1073745844"></activity>
+        <activity theme="2131886556" name="com.applovin.creative.MaxCreativeDebuggerActivity"
+                  configChanges="1073745844"></activity>
+        <activity theme="2131886556" name="com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity"
+                  configChanges="1073745844"></activity>
+        <service name="com.applovin.impl.adview.activity.FullscreenAdService" exported="0" stopWithTask="0"></service>
+        <activity name="sg.bigo.ads.ad.splash.AdSplashActivity" screenOrientation="1"></activity>
+        <activity name="sg.bigo.ads.ad.splash.LandscapeAdSplashActivity" screenOrientation="0"></activity>
+        <provider name="sg.bigo.ads.controller.provider.BigoAdsProvider" exported="0"
+                  authorities="com.asmr.coloring.paint.book.BigoAdsProvider"></provider>
+        <activity theme="16974064" name="sg.bigo.ads.api.AdActivity" screenOrientation="1" configChanges="1152"
+                  windowSoftInputMode="3"></activity>
+        <activity theme="16973831" name="sg.bigo.ads.core.mraid.MraidVideoActivity" screenOrientation="1"
+                  configChanges="1184"></activity>
+        <activity theme="16973840" name="com.facebook.ads.AudienceNetworkActivity" exported="0"
+                  configChanges="3488"></activity>
+        <provider name="com.facebook.ads.AudienceNetworkContentProvider" exported="0"
+                  authorities="com.asmr.coloring.paint.book.AudienceNetworkContentProvider"></provider>
+        <activity name="com.fyber.inneractive.sdk.activities.InneractiveInternalBrowserActivity" screenOrientation="13"
+                  configChanges="3488" hardwareAccelerated="-1"></activity>
+        <activity theme="16973831" name="com.fyber.inneractive.sdk.activities.InneractiveFullscreenAdActivity"
+                  configChanges="3488" hardwareAccelerated="-1"></activity>
+        <activity theme="16973831"
+                  name="com.fyber.inneractive.sdk.activities.InneractiveRichMediaVideoPlayerActivityCore"
+                  configChanges="3488" hardwareAccelerated="-1"></activity>
+        <activity theme="16973840" name="com.fyber.inneractive.sdk.activities.InternalStoreWebpageActivity"
+                  excludeFromRecents="-1" screenOrientation="4" configChanges="3488"></activity>
+        <activity name="com.fyber.inneractive.sdk.activities.FyberReportAdActivity" screenOrientation="13"
+                  configChanges="3488" hardwareAccelerated="-1"></activity>
+        <activity theme="16973839" name="com.google.android.gms.ads.AdActivity" exported="0"
+                  configChanges="4016"></activity>
+        <provider name="com.google.android.gms.ads.MobileAdsInitProvider" exported="0"
+                  authorities="com.asmr.coloring.paint.book.mobileadsinitprovider" initOrder="100"></provider>
+        <service name="com.google.android.gms.ads.AdService" enabled="-1" exported="0"></service>
+        <activity name="com.google.android.gms.ads.OutOfContextTestingActivity" exported="0"
+                  configChanges="4016"></activity>
+        <receiver name="com.google.android.gms.measurement.AppMeasurementReceiver" enabled="-1" exported="0"></receiver>
+        <service name="com.google.android.gms.measurement.AppMeasurementService" enabled="-1" exported="0"></service>
+        <service name="com.google.android.gms.measurement.AppMeasurementJobService"
+                 permission="android.permission.BIND_JOB_SERVICE" enabled="-1" exported="0"></service>
+        <service name="com.google.firebase.components.ComponentDiscoveryService" exported="0" directBootAware="-1">
+            <meta-data
+                    name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                    value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                       value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                       value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar"
+                       value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                       value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                       value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                       value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+                       value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data
+                    name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                    value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                       value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+                       value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+        </service>
+        <service name="com.yandex.metrica.MetricaService" enabled="-1" exported="0" process=":Metrica">
+            <intent-filter>
+                <category name="android.intent.category.DEFAULT"></category>
+                <action name="com.yandex.metrica.IMetricaService"></action>
+                <data scheme="metrica"></data>
+            </intent-filter>
+            <meta-data name="metrica:api:level" value="105"></meta-data>
+        </service>
+        <service name="com.yandex.metrica.ConfigurationService" enabled="-1" exported="0" process=":Metrica">
+            <meta-data name="metrica:configuration:api:level" value="3"></meta-data>
+            <intent-filter>
+                <action name="com.yandex.metrica.configuration.ACTION_INIT"></action>
+            </intent-filter>
+        </service>
+        <service name="com.yandex.metrica.ConfigurationJobService" permission="android.permission.BIND_JOB_SERVICE"
+                 enabled="-1" exported="0" process=":Metrica"></service>
+        <provider name="com.yandex.metrica.PreloadInfoContentProvider" enabled="-1" exported="-1" process=":Metrica"
+                  authorities="com.asmr.coloring.paint.book.appmetrica.preloadinfo.retail"></provider>
+        <receiver name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+                  permission="com.google.android.c2dm.permission.SEND" exported="-1">
+            <intent-filter>
+                <action name="com.google.android.c2dm.intent.RECEIVE"></action>
+            </intent-filter>
+        </receiver>
+        <service name="com.google.firebase.messaging.FirebaseMessagingService" exported="0" directBootAware="-1">
+            <intent-filter priority="-500">
+                <action name="com.google.firebase.MESSAGING_EVENT"></action>
+            </intent-filter>
+        </service>
+        <activity theme="16973831" name="com.unity3d.services.ads.adunit.AdUnitActivity" exported="0"
+                  configChanges="1073745919" hardwareAccelerated="-1"></activity>
+        <activity theme="16973841" name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity" exported="0"
+                  configChanges="1073745919" hardwareAccelerated="-1"></activity>
+        <activity theme="16973841" name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity" exported="0"
+                  configChanges="1073745919" hardwareAccelerated="0"></activity>
+        <activity theme="16973831" name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity" exported="0"
+                  configChanges="1073745919" hardwareAccelerated="0"></activity>
+        <activity theme="16973831" name="com.unity3d.ads.adplayer.FullScreenWebViewDisplay" exported="0"
+                  configChanges="1073745919" hardwareAccelerated="-1"></activity>
+        <provider name="androidx.startup.InitializationProvider" exported="0"
+                  authorities="com.asmr.coloring.paint.book.androidx-startup">
+            <meta-data name="androidx.lifecycle.ProcessLifecycleInitializer" value="androidx.startup"></meta-data>
+            <meta-data name="com.unity3d.services.core.configuration.AdsSdkInitializer"
+                       value="androidx.startup"></meta-data>
+            <meta-data name="androidx.work.WorkManagerInitializer" value="androidx.startup"></meta-data>
+            <meta-data name="androidx.profileinstaller.ProfileInstallerInitializer"
+                       value="androidx.startup"></meta-data>
+        </provider>
+        <activity theme="16973840" name="com.google.android.gms.common.api.GoogleApiActivity" exported="0"></activity>
+        <activity theme="2131886451" name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+                  exported="0" stateNotNeeded="-1"></activity>
+        <provider name="com.google.firebase.provider.FirebaseInitProvider" exported="0"
+                  authorities="com.asmr.coloring.paint.book.firebaseinitprovider" initOrder="100"
+                  directBootAware="-1"></provider>
+        <activity name="com.vungle.ads.internal.ui.VungleActivity" launchMode="1" configChanges="4000"
+                  hardwareAccelerated="-1"></activity>
+        <provider name="com.vungle.ads.internal.util.VungleProvider" exported="0"
+                  authorities="com.asmr.coloring.paint.book.vungle-provider"></provider>
+        <service name="androidx.work.impl.background.systemalarm.SystemAlarmService" enabled="2130968579" exported="0"
+                 directBootAware="0"></service>
+        <service name="androidx.work.impl.background.systemjob.SystemJobService"
+                 permission="android.permission.BIND_JOB_SERVICE" enabled="2130968581" exported="-1"
+                 directBootAware="0"></service>
+        <service name="androidx.work.impl.foreground.SystemForegroundService" enabled="2130968580" exported="0"
+                 directBootAware="0"></service>
+        <receiver name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" enabled="-1" exported="0"
+                  directBootAware="0"></receiver>
+        <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" enabled="0"
+                  exported="0" directBootAware="0">
+            <intent-filter>
+                <action name="android.intent.action.ACTION_POWER_CONNECTED"></action>
+                <action name="android.intent.action.ACTION_POWER_DISCONNECTED"></action>
+            </intent-filter>
+        </receiver>
+        <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" enabled="0"
+                  exported="0" directBootAware="0">
+            <intent-filter>
+                <action name="android.intent.action.BATTERY_OKAY"></action>
+                <action name="android.intent.action.BATTERY_LOW"></action>
+            </intent-filter>
+        </receiver>
+        <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" enabled="0"
+                  exported="0" directBootAware="0">
+            <intent-filter>
+                <action name="android.intent.action.DEVICE_STORAGE_LOW"></action>
+                <action name="android.intent.action.DEVICE_STORAGE_OK"></action>
+            </intent-filter>
+        </receiver>
+        <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" enabled="0"
+                  exported="0" directBootAware="0">
+            <intent-filter>
+                <action name="android.net.conn.CONNECTIVITY_CHANGE"></action>
+            </intent-filter>
+        </receiver>
+        <receiver name="androidx.work.impl.background.systemalarm.RescheduleReceiver" enabled="0" exported="0"
+                  directBootAware="0">
+            <intent-filter>
+                <action name="android.intent.action.BOOT_COMPLETED"></action>
+                <action name="android.intent.action.TIME_SET"></action>
+                <action name="android.intent.action.TIMEZONE_CHANGED"></action>
+            </intent-filter>
+        </receiver>
+        <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" enabled="2130968579"
+                  exported="0" directBootAware="0">
+            <intent-filter>
+                <action name="androidx.work.impl.background.systemalarm.UpdateProxies"></action>
+            </intent-filter>
+        </receiver>
+        <receiver name="androidx.work.impl.diagnostics.DiagnosticsReceiver" permission="android.permission.DUMP"
+                  enabled="-1" exported="-1" directBootAware="0">
+            <intent-filter>
+                <action name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"></action>
+            </intent-filter>
+        </receiver>
+        <meta-data name="com.google.android.gms.version" value="2131361800"></meta-data>
+        <service name="com.google.firebase.messaging.cpp.ListenerService" exported="0">
+            <intent-filter>
+                <action name="com.google.firebase.MESSAGING_EVENT"></action>
+            </intent-filter>
+        </service>
+        <service name="com.google.firebase.messaging.cpp.RegistrationIntentService" exported="0"></service>
+        <activity name="com.ironsource.sdk.controller.ControllerActivity" configChanges="1152"
+                  hardwareAccelerated="-1"></activity>
+        <activity theme="16973839" name="com.ironsource.sdk.controller.InterstitialActivity" configChanges="1152"
+                  hardwareAccelerated="-1"></activity>
+        <activity theme="16973839" name="com.ironsource.sdk.controller.OpenUrlActivity" configChanges="1152"
+                  hardwareAccelerated="-1"></activity>
+        <activity theme="16973830" name="com.ironsource.mediationsdk.testSuite.TestSuiteActivity" configChanges="1152"
+                  hardwareAccelerated="-1"></activity>
+        <provider name="com.ironsource.lifecycle.IronsourceLifecycleProvider"
+                  authorities="com.asmr.coloring.paint.book.IronsourceLifecycleProvider"></provider>
+        <activity theme="16973840" name="com.mbridge.msdk.reward.player.MBRewardVideoActivity" excludeFromRecents="-1"
+                  configChanges="1184"></activity>
+        <activity theme="2131886615" name="com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity" launchMode="0"
+                  configChanges="1184"></activity>
+        <activity theme="2131886615" name="com.bytedance.sdk.openadsdk.activity.TTPlayableLandingPageActivity"
+                  launchMode="0" configChanges="1184"></activity>
+        <activity theme="2131886615" name="com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageLink2Activity"
+                  launchMode="0" configChanges="1184"></activity>
+        <activity theme="16973840" name="com.bytedance.sdk.openadsdk.activity.TTDelegateActivity"
+                  launchMode="0"></activity>
+        <activity theme="2131886618" name="com.bytedance.sdk.openadsdk.activity.TTWebsiteActivity" launchMode="0"
+                  screenOrientation="1"></activity>
+        <service name="com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService"></service>
+        <activity theme="2131886606" name="com.bytedance.sdk.openadsdk.activity.TTAppOpenAdActivity" launchMode="0"
+                  configChanges="1184"></activity>
+        <activity theme="2131886614" name="com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity" launchMode="0"
+                  configChanges="1184"></activity>
+        <activity theme="2131886614" name="com.bytedance.sdk.openadsdk.activity.TTRewardExpressVideoActivity"
+                  launchMode="0" configChanges="1184"></activity>
+        <activity theme="2131886614" name="com.bytedance.sdk.openadsdk.activity.TTFullScreenVideoActivity"
+                  launchMode="0" configChanges="1184"></activity>
+        <activity theme="2131886614" name="com.bytedance.sdk.openadsdk.activity.TTFullScreenExpressVideoActivity"
+                  launchMode="0" configChanges="1184"></activity>
+        <activity theme="2131886613" name="com.bytedance.sdk.openadsdk.activity.TTInterstitialActivity" launchMode="0"
+                  configChanges="1184"></activity>
+        <activity theme="2131886613" name="com.bytedance.sdk.openadsdk.activity.TTInterstitialExpressActivity"
+                  launchMode="0" configChanges="1184"></activity>
+        <service name="com.google.android.gms.messaging.cpp.MessageForwardingService"
+                 permission="android.permission.BIND_JOB_SERVICE" exported="-1"></service>
+        <receiver name="com.unity.androidnotifications.UnityNotificationManager" exported="0"></receiver>
+        <receiver name="com.unity.androidnotifications.UnityNotificationRestartReceiver" enabled="0" exported="0">
+            <intent-filter>
+                <action name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+        <meta-data name="reschedule_notifications_on_restart" value="-1"></meta-data>
+        <meta-data name="com.unity.androidnotifications.exact_scheduling" value="0"></meta-data>
+        <uses-library name="org.apache.http.legacy" required="0"></uses-library>
+        <meta-data name="com.google.android.gms.ads.APPLICATION_ID"
+                   value="ca-app-pub-9082660478786368~9505523184"></meta-data>
+        <meta-data name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION" value="-1"></meta-data>
+        <meta-data name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING" value="-1"></meta-data>
+        <meta-data name="com.google.unity.ads.UNITY_VERSION" value="2022.3.9f1"></meta-data>
+        <receiver name="androidx.profileinstaller.ProfileInstallReceiver" permission="android.permission.DUMP"
+                  enabled="-1" exported="-1" directBootAware="0">
+            <intent-filter>
+                <action name="androidx.profileinstaller.action.INSTALL_PROFILE"></action>
+            </intent-filter>
+            <intent-filter>
+                <action name="androidx.profileinstaller.action.SKIP_FILE"></action>
+            </intent-filter>
+            <intent-filter>
+                <action name="androidx.profileinstaller.action.SAVE_PROFILE"></action>
+            </intent-filter>
+            <intent-filter>
+                <action name="androidx.profileinstaller.action.BENCHMARK_OPERATION"></action>
+            </intent-filter>
+        </receiver>
+        <service name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" exported="0">
+            <meta-data name="backend:com.google.android.datatransport.cct.CctBackendFactory" value="cct"></meta-data>
+        </service>
+        <service name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+                 permission="android.permission.BIND_JOB_SERVICE" exported="0"></service>
+        <receiver
+                name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+                exported="0"></receiver>
+        <provider name="com.squareup.picasso.PicassoProvider" exported="0"
+                  authorities="com.asmr.coloring.paint.book.com.squareup.picasso"></provider>
+        <service name="androidx.room.MultiInstanceInvalidationService" exported="0" directBootAware="-1"></service>
+        <activity theme="16973840" name="com.ogury.cm.ConsentActivity" configChanges="1152"></activity>
+        <activity theme="16973840" name="com.android.billingclient.api.ProxyBillingActivity"
+                  configChanges="1456"></activity>
+        <activity theme="2131886347" name="io.presage.interstitial.ui.InterstitialActivity" exported="0"
+                  configChanges="1152"></activity>
+        <activity theme="2131886347" name="io.presage.interstitial.ui.InterstitialAndroid8TransparentActivity"
+                  exported="0" configChanges="1152"></activity>
+        <activity theme="2131886346" name="io.presage.interstitial.ui.InterstitialAndroid8RotableActivity" exported="0"
+                  configChanges="1152"></activity>
+        <activity theme="2131886346" name="io.presage.mraid.browser.ShortcutActivity" exported="0">
+            <intent-filter>
+                <action name="android.intent.action.MAIN"></action>
+            </intent-filter>
+        </activity>
+        <activity theme="2131886346" name="io.presage.mraid.browser.Android8AndLaterShortcutActivity" exported="0">
+            <intent-filter>
+                <action name="android.intent.action.MAIN"></action>
+            </intent-filter>
+        </activity>
+        <receiver name="com.ogury.core.internal.OguryLogEnablerReceiver" enabled="-1" exported="-1">
+            <intent-filter>
+                <action name="com.ogury.sdk.intent.ENABLE_LOGS"></action>
+            </intent-filter>
+        </receiver>
+        <activity theme="2131886600" name="com.mbridge.msdk.activity.MBCommonActivity" exported="0"
+                  excludeFromRecents="-1" configChanges="144"></activity>
+        <activity name="com.mbridge.msdk.out.LoadingActivity"></activity>
+        <meta-data name="com.android.vending.splits.required" value="-1"></meta-data>
+        <meta-data name="com.android.vending.splits" resource="2132017153"></meta-data>
+    </application>
+</manifest>
